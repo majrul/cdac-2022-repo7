@@ -8,7 +8,7 @@ public class App {
 
 	public static void main(String[] args) throws Exception {
 		Class.forName("com.mysql.cj.jdbc.Driver");
-		Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/training", "root", "");
+		Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/training", "sammy", "password");
 		
 		PreparedStatement stmt = conn.prepareStatement("insert into emp values(?, ?, ?)");
 		stmt.setInt(1, 1001);
